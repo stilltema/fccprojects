@@ -7,7 +7,79 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1></h1>
-    <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form" action="https://echo.htmlacademy.ru">
+      <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+
+      <label id="email-label">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+
+      <label id="number-label">Age (optional)</label>
+      <input id="number" type="number" placeholder="Age" min="0" max="100">
+
+      <label for="dropdown">Which option best describes your current role?</label>
+      <select name="role" id="dropdown">
+        <option disabled selected>Select current role</option>
+        <option value="student">Student</option>
+        <option value="fulltime">Full Time Job</option>
+        <option value="fulllearner">Full Time Learner</option>
+        <option value="prefernotsay">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+
+      <fieldset>
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <input type="radio" name="reccomend" id="radio-definetly" value="definetly">
+        <label for="radio-definetly">Definetly</label>
+        <input type="radio" name="reccomend" id="radio-maybe" value="maybe">
+        <label for="radio-maybe">Maybe</label>
+        <input type="radio" name="reccomend" id="radio-notsure" value="notsure">
+        <label for="radio-notsure">Not sure</label>
+      </fieldset>
+
+      <label for="dropdown-feature">What is your favorite feature of freeCodeCamp?</label>
+      <select name="role" id="dropdown-feature">
+        <option disabled selected>Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="opensource">Open Source</option>
+      </select>
+
+      <fieldset>
+        <legend>What would you like to see improved? (Check all that apply)</legend>
+        <input type="checkbox" name="improve" id="check-frontend" value="frontend">
+        <label for="check-frontend">Front-end Projects</label>
+        <input type="checkbox" name="improve" id="check-backend" value="backend">
+        <label for="check-backend">Back-end Projects</label>
+        <input type="checkbox" name="improve" id="check-data" value="data">
+        <label for="check-data">Data Visualization</label>
+        <input type="checkbox" name="improve" id="check-challenge" value="challenge">
+        <label for="check-challenge">Challenges</label>
+        <input type="checkbox" name="improve" id="check-opensource" value="opensoure">
+        <label for="check-opensource">Open Source Community</label>
+        <input type="checkbox" name="improve" id="check-helproom" value="helproom">
+        <label for="check-helproom">Gitter help rooms</label>
+        <input type="checkbox" name="improve" id="check-video" value="video">
+        <label for="check-video">Videos</label>
+        <input type="checkbox" name="improve" id="check-meetup" value="meetup">
+        <label for="check-meetup">City Meetups</label>
+        <input type="checkbox" name="improve" id="check-wiki" value="wiki">
+        <label for="check-wiki">Wiki</label>
+        <input type="checkbox" name="improve" id="check-forum" value="forum">
+        <label for="check-forum">Forum</label>
+        <input type="checkbox" name="improve" id="check-courses" value="courses">
+        <label for="check-courses">Additional Courses</label>
+      </fieldset>
+      
+      <label for="suggestions-area">Any comments or suggestions?</label>
+      <textarea name="suggestions" id="suggestions-area" cols="60" rows="5" placeholder="Enter your comment here..."></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
