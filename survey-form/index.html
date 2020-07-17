@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form" action="https://echo.htmlacademy.ru">
+      <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+
+      <label id="email-label">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+
+      <label id="number-label">Age <span>(optional)</span></label>
+      <input id="number" type="number" placeholder="Age" min="0" max="100">
+
+      <label for="dropdown">Which option best describes your current role?</label>
+      <select name="role" id="dropdown">
+        <option disabled selected>Select current role</option>
+        <option value="student">Student</option>
+        <option value="fulltime">Full Time Job</option>
+        <option value="fulllearner">Full Time Learner</option>
+        <option value="prefernotsay">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+
+      <fieldset>
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <label for="radio-definetly">
+          <input type="radio" name="reccomend" id="radio-definetly" value="definetly">Definetly
+        </label>
+        <label for="radio-maybe">
+          <input type="radio" name="reccomend" id="radio-maybe" value="maybe">Maybe
+        </label>
+        <label for="radio-notsure">
+          <input type="radio" name="reccomend" id="radio-notsure" value="notsure">Not sure
+        </label>
+      </fieldset>
+
+      <label for="dropdown-feature">What is your favorite feature of freeCodeCamp?</label>
+      <select name="role" id="dropdown-feature">
+        <option disabled selected>Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="opensource">Open Source</option>
+      </select>
+
+      <fieldset>
+        <legend>What would you like to see improved? (Check all that apply)</legend>
+        <label for="check-frontend">
+          <input type="checkbox" name="improve" id="check-frontend" value="frontend"> Front-end Projects
+        </label>
+        <label for="check-backend">
+          <input type="checkbox" name="improve" id="check-backend" value="backend"> Back-end Projects
+        </label>
+        <label for="check-data">
+          <input type="checkbox" name="improve" id="check-data" value="data"> Data Visualization
+        </label>
+        <label for="check-challenge">
+          <input type="checkbox" name="improve" id="check-challenge" value="challenge"> Challenges
+        </label>
+        <label for="check-opensource">
+          <input type="checkbox" name="improve" id="check-opensource" value="opensoure"> Open Source Community
+        </label>
+        <label for="check-helproom">
+          <input type="checkbox" name="improve" id="check-helproom" value="helproom"> Gitter help rooms
+        </label>
+        <label for="check-video">
+          <input type="checkbox" name="improve" id="check-video" value="video"> Videos
+        </label>
+        <label for="check-meetup">
+          <input type="checkbox" name="improve" id="check-meetup" value="meetup"> City Meetups
+        </label>
+        <label for="check-wiki">
+          <input type="checkbox" name="improve" id="check-wiki" value="wiki"> Wiki
+        </label>
+        <label for="check-forum">
+          <input type="checkbox" name="improve" id="check-forum" value="forum"> Forum
+        </label>
+        <label for="check-courses">
+          <input type="checkbox" name="improve" id="check-courses" value="courses"> Additional Courses
+        </label>
+      </fieldset>
+      
+      <label for="suggestions-area" class="textarea-label">Any comments or suggestions?</label>
+      <textarea name="suggestions" id="suggestions-area" cols="60" rows="5" placeholder="Enter your comment here..."></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
